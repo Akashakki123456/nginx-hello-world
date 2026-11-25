@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: akashakki123456/nginx-hello-world
+  tag: "v1"
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30080
